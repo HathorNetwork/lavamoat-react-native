@@ -1,0 +1,377 @@
+{
+  "resources": {
+    "@callstack/repack": {
+      "globals": {
+        "WebSocket": true,
+        "__DEV__": true,
+        "__PLATFORM__": true,
+        "__PUBLIC_PORT__": true,
+        "__REACT_NATIVE_MINOR_VERSION__": true,
+        "__webpack_hash__": true,
+        "__webpack_public_path__": "write",
+        "console.error": true,
+        "console.log": true,
+        "console.warn": true
+      },
+      "packages": {
+        "@babel/runtime": true,
+        "react-native": true
+      }
+    },
+    "@callstack/repack>@pmmmwh/react-refresh-webpack-plugin": {
+      "globals": {
+        "__react_refresh_library__": true,
+        "__webpack_require__.c": true,
+        "console.warn": true,
+        "onHotAcceptError": true,
+        "process.env.NODE_ENV": true,
+        "setTimeout": true
+      },
+      "packages": {
+        "@callstack/repack>@pmmmwh/react-refresh-webpack-plugin>core-js-pure": true,
+        "@callstack/repack>react-refresh": true
+      }
+    },
+    "@callstack/repack>@pmmmwh/react-refresh-webpack-plugin>core-js-pure": {
+      "globals": {
+        "document": true
+      }
+    },
+    "@callstack/repack>pretty-format": {
+      "packages": {
+        "@babel/runtime": true,
+        "@callstack/repack>pretty-format>react-is": true,
+        "eslint>chalk>ansi-styles": true,
+        "eslint>strip-ansi>ansi-regex": true
+      }
+    },
+    "@callstack/repack>pretty-format>react-is": {
+      "globals": {
+        "console": true,
+        "process.env.NODE_ENV": true
+      }
+    },
+    "@callstack/repack>react-refresh": {
+      "globals": {
+        "console": true,
+        "process.env.NODE_ENV": true
+      }
+    },
+    "eslint>chalk>ansi-styles": {
+      "packages": {
+        "eslint>chalk>ansi-styles>color-convert": true
+      }
+    },
+    "eslint>chalk>ansi-styles>color-convert": {
+      "packages": {
+        "eslint>chalk>ansi-styles>color-convert>color-name": true
+      }
+    },
+    "react": {
+      "globals": {
+        "MessageChannel": true,
+        "__REACT_DEVTOOLS_GLOBAL_HOOK__": true,
+        "console": true,
+        "process.env.NODE_ENV": true
+      }
+    },
+    "react-native": {
+      "globals": {
+        "ArrayBufferView": true,
+        "Blob": true,
+        "DOMRect": "write",
+        "DOMRectReadOnly": "write",
+        "DebuggerInternal": true,
+        "ErrorUtils": true,
+        "Event": "write",
+        "Headers": true,
+        "HermesInternal": true,
+        "IS_REACT_ACT_ENVIRONMENT": true,
+        "RN$Bridgeless": true,
+        "RN$registerCallableModule": true,
+        "RN$stopSurface": "write",
+        "Request": true,
+        "Response": true,
+        "WebSocket": true,
+        "__DEV__": true,
+        "__METRO_GLOBAL_PREFIX__": true,
+        "__RCTProfileIsProfiling": true,
+        "__REACT_DEVTOOLS_GLOBAL_HOOK__": true,
+        "__REACT_DEVTOOLS_PORT__": true,
+        "__blobCollectorProvider": true,
+        "__fbBatchedBridgeConfig": true,
+        "__fbDisableExceptionsManager": true,
+        "__fbGenNativeModule": "write",
+        "__fetchSegment": "write",
+        "__inspectorTimestamp": true,
+        "__nativeComponentRegistry__hasComponent": true,
+        "__registerInspectorAgent": true,
+        "__turboModuleProxy": true,
+        "addEventListener": true,
+        "alert": "write",
+        "cancelAnimationFrame": true,
+        "clearImmediate": true,
+        "clearTimeout": true,
+        "console": true,
+        "dispatchEvent": true,
+        "document": true,
+        "event": "write",
+        "fetch": true,
+        "jest": true,
+        "nativeCallSyncHook": true,
+        "nativeCaptureHeap": true,
+        "nativeExtensions": true,
+        "nativeFabricUIManager": true,
+        "nativeFlushQueueImmediate": true,
+        "nativeLoggingHook": true,
+        "nativeModuleProxy": true,
+        "nativePerformanceNow": true,
+        "nativeQPLTimestamp": true,
+        "nativeRequireModuleConfig": true,
+        "nativeTraceBeginAsyncFlow": true,
+        "nativeTraceBeginAsyncSection": true,
+        "nativeTraceBeginSection": true,
+        "nativeTraceCounter": true,
+        "nativeTraceEndAsyncSection": true,
+        "nativeTraceEndSection": true,
+        "nativeTraceIsTracing": true,
+        "navigator": "write",
+        "performance": "write",
+        "pokeSamplingProfiler": true,
+        "process": "write",
+        "queueMicrotask": true,
+        "regeneratorRuntime": true,
+        "removeEventListener": true,
+        "requestAnimationFrame": true,
+        "self": "write",
+        "setImmediate": true,
+        "setTimeout": true,
+        "window": "write"
+      },
+      "packages": {
+        "@babel/runtime": true,
+        "@callstack/repack": true,
+        "@callstack/repack>pretty-format": true,
+        "react": true,
+        "react-native>@react-native/assets-registry": true,
+        "react-native>@react-native/normalize-colors": true,
+        "react-native>@react-native/virtualized-lists": true,
+        "react-native>abort-controller": true,
+        "react-native>anser": true,
+        "react-native>base64-js": true,
+        "react-native>deprecated-react-native-prop-types": true,
+        "react-native>event-target-shim": true,
+        "react-native>invariant": true,
+        "react-native>memoize-one": true,
+        "react-native>nullthrows": true,
+        "react-native>pretty-format": true,
+        "react-native>promise": true,
+        "react-native>react-devtools-core": true,
+        "react-native>react-refresh": true,
+        "react-native>regenerator-runtime": true,
+        "react-native>scheduler": true,
+        "react-native>stacktrace-parser": true,
+        "react-native>use-sync-external-store": true,
+        "react-native>whatwg-fetch": true
+      }
+    },
+    "react-native>@react-native/js-polyfills": {
+      "globals": {
+        "ErrorUtils": "write",
+        "__DEV__": true,
+        "__inspectorLog": true,
+        "console": "write",
+        "nativeLoggingHook": true,
+        "print": true
+      }
+    },
+    "react-native>@react-native/virtualized-lists": {
+      "globals": {
+        "__DEV__": true,
+        "clearTimeout": true,
+        "console": true,
+        "performance.now": true,
+        "setTimeout": true
+      },
+      "packages": {
+        "@babel/runtime": true,
+        "react": true,
+        "react-native": true,
+        "react-native>invariant": true,
+        "react-native>nullthrows": true
+      }
+    },
+    "react-native>abort-controller": {
+      "packages": {
+        "@babel/runtime": true,
+        "react-native>event-target-shim": true
+      }
+    },
+    "react-native>deprecated-react-native-prop-types": {
+      "packages": {
+        "react-native>deprecated-react-native-prop-types>@react-native/normalize-colors": true,
+        "react-native>deprecated-react-native-prop-types>prop-types": true,
+        "react-native>invariant": true
+      }
+    },
+    "react-native>deprecated-react-native-prop-types>prop-types": {
+      "globals": {
+        "console": true,
+        "process.env.NODE_ENV": true
+      },
+      "packages": {
+        "react-native>deprecated-react-native-prop-types>prop-types>react-is": true,
+        "react-native>react-shallow-renderer>object-assign": true
+      }
+    },
+    "react-native>deprecated-react-native-prop-types>prop-types>react-is": {
+      "globals": {
+        "console": true,
+        "process.env.NODE_ENV": true
+      }
+    },
+    "react-native>event-target-shim": {
+      "globals": {
+        "Event": true,
+        "EventTarget": true,
+        "console": true
+      }
+    },
+    "react-native>invariant": {
+      "globals": {
+        "process.env.NODE_ENV": true
+      }
+    },
+    "react-native>pretty-format": {
+      "packages": {
+        "@babel/runtime": true,
+        "eslint>chalk>ansi-styles": true,
+        "eslint>strip-ansi>ansi-regex": true,
+        "react-native>pretty-format>react-is": true
+      }
+    },
+    "react-native>pretty-format>react-is": {
+      "globals": {
+        "console": true,
+        "process.env.NODE_ENV": true
+      }
+    },
+    "react-native>promise": {
+      "globals": {
+        "AggregateError": true,
+        "clearTimeout": true,
+        "console.warn": true,
+        "setImmediate": true,
+        "setTimeout": true
+      }
+    },
+    "react-native>react-devtools-core": {
+      "globals": {
+        "$attribute": "write",
+        "AbortController": true,
+        "CSSStyleRule": true,
+        "ElementTypeClass": true,
+        "ElementTypeForwardRef": true,
+        "ElementTypeFunction": true,
+        "ElementTypeMemo": true,
+        "FORWARD_REF_NUMBER": true,
+        "FORWARD_REF_SYMBOL_STRING": true,
+        "HTMLElement": true,
+        "LAZY_NUMBER": true,
+        "LAZY_SYMBOL_STRING": true,
+        "LOCAL_STORAGE_COMPONENT_FILTER_PREFERENCES_KEY": true,
+        "LOCAL_STORAGE_HIDE_CONSOLE_LOGS_IN_STRICT_MODE": true,
+        "LOCAL_STORAGE_OPEN_IN_EDITOR_URL": true,
+        "LOCAL_STORAGE_SHOULD_APPEND_COMPONENT_STACK_KEY": true,
+        "LOCAL_STORAGE_SHOULD_BREAK_ON_CONSOLE_ERRORS": true,
+        "LOCAL_STORAGE_SHOW_INLINE_WARNINGS_AND_ERRORS_KEY": true,
+        "MEMO_NUMBER": true,
+        "MEMO_SYMBOL_STRING": true,
+        "Node.ELEMENT_NODE": true,
+        "SUSPENSE_LIST_NUMBER": true,
+        "SUSPENSE_LIST_SYMBOL_STRING": true,
+        "SUSPENSE_NUMBER": true,
+        "SUSPENSE_SYMBOL_STRING": true,
+        "WebSocket": true,
+        "__REACT_DEVTOOLS_APPEND_COMPONENT_STACK__": "write",
+        "__REACT_DEVTOOLS_BREAK_ON_CONSOLE_ERRORS__": "write",
+        "__REACT_DEVTOOLS_BROWSER_THEME__": "write",
+        "__REACT_DEVTOOLS_COMPONENT_FILTERS__": true,
+        "__REACT_DEVTOOLS_CONSOLE_FUNCTIONS__": "write",
+        "__REACT_DEVTOOLS_GLOBAL_HOOK__": true,
+        "__REACT_DEVTOOLS_HIDE_CONSOLE_LOGS_IN_STRICT_MODE__": "write",
+        "__REACT_DEVTOOLS_SHOW_INLINE_WARNINGS_AND_ERRORS__": "write",
+        "__REACT_DEVTOOLS_TARGET_WINDOW__": true,
+        "cancelAnimationFrame": true,
+        "chrome": true,
+        "clearTimeout": true,
+        "console": true,
+        "define": true,
+        "document": true,
+        "getComputedStyle": true,
+        "getInObject": true,
+        "innerHeight": true,
+        "innerWidth": true,
+        "localStorage.getItem": true,
+        "localStorage.removeItem": true,
+        "localStorage.setItem": true,
+        "localStorageGetItem": true,
+        "localStorageSetItem": true,
+        "navigator.userAgent": true,
+        "performance": true,
+        "process": true,
+        "requestAnimationFrame": true,
+        "sessionStorage.getItem": true,
+        "sessionStorage.removeItem": true,
+        "sessionStorage.setItem": true,
+        "setInObject": true,
+        "setTimeout": true
+      }
+    },
+    "react-native>react-refresh": {
+      "globals": {
+        "process.env.NODE_ENV": true
+      }
+    },
+    "react-native>regenerator-runtime": {
+      "globals": {
+        "regeneratorRuntime": "write"
+      }
+    },
+    "react-native>scheduler": {
+      "globals": {
+        "MessageChannel": true,
+        "clearTimeout": true,
+        "nativeRuntimeScheduler": true,
+        "navigator": true,
+        "performance": true,
+        "process.env.NODE_ENV": true,
+        "setImmediate": true,
+        "setTimeout": true
+      }
+    },
+    "react-native>use-sync-external-store": {
+      "globals": {
+        "__REACT_DEVTOOLS_GLOBAL_HOOK__": true,
+        "console": true,
+        "process.env.NODE_ENV": true
+      },
+      "packages": {
+        "react": true
+      }
+    },
+    "react-native>whatwg-fetch": {
+      "globals": {
+        "AbortController": true,
+        "Blob": true,
+        "FileReader": true,
+        "FormData": true,
+        "URLSearchParams.prototype.isPrototypeOf": true,
+        "XMLHttpRequest": true,
+        "console.warn": true,
+        "define": true,
+        "setTimeout": true
+      }
+    }
+  }
+}
