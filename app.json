@@ -1,0 +1,14 @@
+{
+  "name": "lavanative",
+  "displayName": "lavanative",
+  "react-native-webpack": {
+    "project": {
+      "ios": {
+        "sourceDir": "ios"
+      },
+      "android": {
+        "sourceDir": "android"
+      }
+    }
+  }
+}
