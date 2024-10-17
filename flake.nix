@@ -2,6 +2,7 @@
   description = "virtual environments";
 
   inputs = {
+    nixpkgs.url = "nixpkgs/nixpkgs-unstable";
     devshell.url = "github:numtide/devshell";
     flake-utils.url = "github:numtide/flake-utils";
   };
@@ -14,7 +15,7 @@
           inherit (packages) node-packages;
         in
         {
-          nodejs = final.nodejs_20;
+          nodejs = final.nodejs_22;
           nodePackages = prev.nodePackages;
         };
     in
@@ -32,7 +33,7 @@
         pkgs.devshell.mkShell {
           packages = with pkgs; [
             nixpkgs-fmt
-            nodejs_20
+            nodejs_22
             yarn-berry
             cocoapods
           ];

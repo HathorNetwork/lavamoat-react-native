@@ -1,4 +1,5 @@
 import path from 'path';
+import LavaMoat from '@lavamoat/webpack';
 import fs from 'fs';
 import TerserPlugin from 'terser-webpack-plugin';
 import * as Repack from '@callstack/repack';
@@ -127,6 +128,12 @@ export default (env) => {
           sourceMapFilename,
           assetsPath,
         },
+      }),
+      new LavaMoat({
+        generatePolicy: true,
+        readableResourceIds: true,
+        diagnosticsVerbosity: 1,
+        // HtmlWebpackPluginInterop: true,
       }),
     ],
   };
