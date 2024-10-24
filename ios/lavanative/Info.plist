@@ -7,7 +7,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>lavanative</string>
 	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
+  <string>$(EXECUTABLE_NAME)</string>
+  <key>ReactNativeBundleLocation</key>
+   <string>main.jsbundle</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>

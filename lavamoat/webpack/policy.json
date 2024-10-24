@@ -1,0 +1,210 @@
+{
+  "resources": {
+    "lavamoat-core": {
+      "globals": {
+        "Reflect": true
+      }
+    },
+    "@callstack/repack": {
+      "globals": {
+        "__webpack_public_path__": true
+      },
+      "packages": {
+        "@babel/runtime": true,
+        "react-native": true
+      }
+    },
+    "react": {
+      "globals": {
+        "process.env.NODE_ENV": true
+      }
+    },
+    "react-native": {
+      "globals": {
+        "Reflect": true,
+        "Object": true,
+        "ArrayBufferView": true,
+        "Blob": true,
+        "DOMRect": true,
+        "DOMRectReadOnly": true,
+        "DebuggerInternal": true,
+        "ErrorUtils": true,
+        "Event": true,
+        "Headers": true,
+        "HermesInternal": true,
+        "RN$Bridgeless": true,
+        "RN$registerCallableModule": true,
+        "RN$stopSurface": true,
+        "Request": true,
+        "Response": true,
+        "__DEV__": true,
+        "__METRO_GLOBAL_PREFIX__": true,
+        "__RCTProfileIsProfiling": true,
+        "__REACT_DEVTOOLS_GLOBAL_HOOK__": true,
+        "__blobCollectorProvider": true,
+        "__fbBatchedBridge": true,
+        "__fbBatchedBridgeConfig": true,
+        "__fbDisableExceptionsManager": true,
+        "__fbGenNativeModule": true,
+        "__fetchSegment": true,
+        "__nativeComponentRegistry__hasComponent": true,
+        "__turboModuleProxy": true,
+        "alert": true,
+        "cancelAnimationFrame": true,
+        "clearImmediate": true,
+        "clearTimeout": true,
+        "console": true,
+        "document": true,
+        "fetch": true,
+        "nativeCallSyncHook": true,
+        "nativeCaptureHeap": true,
+        "nativeExtensions": true,
+        "nativeFabricUIManager": true,
+        "nativeFlushQueueImmediate": true,
+        "nativeLoggingHook": true,
+        "nativeModuleProxy": true,
+        "nativePerformanceNow": true,
+        "nativeQPLTimestamp": true,
+        "nativeRequireModuleConfig": true,
+        "nativeTraceBeginAsyncFlow": true,
+        "nativeTraceBeginAsyncSection": true,
+        "nativeTraceBeginSection": true,
+        "nativeTraceCounter": true,
+        "nativeTraceEndAsyncSection": true,
+        "nativeTraceEndSection": true,
+        "nativeTraceIsTracing": true,
+        "navigator": true,
+        "performance": true,
+        "pokeSamplingProfiler": true,
+        "process": true,
+        "queueMicrotask": true,
+        "regeneratorRuntime": true,
+        "requestAnimationFrame": true,
+        "self": true,
+        "setImmediate": true,
+        "setTimeout": true,
+        "window": true
+      },
+      "packages": {
+        "@babel/runtime": true,
+        "react": true,
+        "react-native>@react-native/assets-registry": true,
+        "react-native>@react-native/normalize-colors": true,
+        "react-native>@react-native/virtualized-lists": true,
+        "react-native>abort-controller": true,
+        "react-native>base64-js": true,
+        "react-native>deprecated-react-native-prop-types": true,
+        "react-native>event-target-shim": true,
+        "react-native>invariant": true,
+        "react-native>memoize-one": true,
+        "react-native>nullthrows": true,
+        "react-native>promise": true,
+        "react-native>regenerator-runtime": true,
+        "react-native>scheduler": true,
+        "react-native>stacktrace-parser": true,
+        "react-native>use-sync-external-store": true,
+        "react-native>whatwg-fetch": true
+      }
+    },
+    "react-native>@react-native/js-polyfills": {
+      "globals": {
+        "ErrorUtils": true,
+        "__DEV__": true,
+        "__inspectorLog": true,
+        "console": true,
+        "nativeLoggingHook": true,
+        "print": true
+      }
+    },
+    "react-native>@react-native/virtualized-lists": {
+      "globals": {
+        "__DEV__": true,
+        "clearTimeout": true,
+        "console": true,
+        "performance.now": true,
+        "setTimeout": true
+      },
+      "packages": {
+        "@babel/runtime": true,
+        "react": true,
+        "react-native": true,
+        "react-native>invariant": true,
+        "react-native>nullthrows": true
+      }
+    },
+    "react-native>abort-controller": {
+      "packages": {
+        "@babel/runtime": true,
+        "react-native>event-target-shim": true
+      }
+    },
+    "react-native>deprecated-react-native-prop-types": {
+      "packages": {
+        "react-native>deprecated-react-native-prop-types>@react-native/normalize-colors": true,
+        "react-native>deprecated-react-native-prop-types>prop-types": true,
+        "react-native>invariant": true
+      }
+    },
+    "react-native>deprecated-react-native-prop-types>prop-types": {
+      "globals": {
+        "process.env.NODE_ENV": true
+      }
+    },
+    "react-native>event-target-shim": {
+      "globals": {
+        "Event": true,
+        "EventTarget": true,
+        "console": true
+      }
+    },
+    "react-native>invariant": {
+      "globals": {
+        "process.env.NODE_ENV": true
+      }
+    },
+    "react-native>promise": {
+      "globals": {
+        "AggregateError": true,
+        "setImmediate": true
+      }
+    },
+    "react-native>regenerator-runtime": {
+      "globals": {
+        "regeneratorRuntime": true
+      }
+    },
+    "react-native>scheduler": {
+      "globals": {
+        "MessageChannel": true,
+        "clearTimeout": true,
+        "nativeRuntimeScheduler": true,
+        "navigator": true,
+        "performance": true,
+        "process.env.NODE_ENV": true,
+        "setImmediate": true,
+        "setTimeout": true
+      }
+    },
+    "react-native>use-sync-external-store": {
+      "globals": {
+        "process.env.NODE_ENV": true
+      },
+      "packages": {
+        "react": true
+      }
+    },
+    "react-native>whatwg-fetch": {
+      "globals": {
+        "AbortController": true,
+        "Blob": true,
+        "FileReader": true,
+        "FormData": true,
+        "URLSearchParams.prototype.isPrototypeOf": true,
+        "XMLHttpRequest": true,
+        "console.warn": true,
+        "define": true,
+        "setTimeout": true
+      }
+    }
+  }
+}

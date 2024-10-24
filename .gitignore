@@ -69,3 +69,6 @@ yarn-error.log
 
 .bundle/
 .direnv/
+
+./ios/main.jsbundle.map
+./ios/main.jsbundle
