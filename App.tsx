@@ -6,9 +6,13 @@
  */
 
 import React from 'react';
-import {Text} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
 
 function App(): JSX.Element {
-  return <Text>OK</Text>;
+  return (
+    <SafeAreaView>
+      <Text>Lavamoat working?</Text>
+    </SafeAreaView>
+  );
 }
 export default App;

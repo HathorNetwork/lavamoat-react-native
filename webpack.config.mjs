@@ -1,6 +1,7 @@
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import * as Repack from '@callstack/repack';
+import TerserPlugin from 'terser-webpack-plugin';
 import LavaMoat from '@lavamoat/webpack';
 
 const dirname = Repack.getDirname(import.meta.url);
@@ -27,7 +28,7 @@ export default (env) => {
     context = dirname,
     entry = './index.js',
     platform = process.env.PLATFORM,
-    minimize = false, // mode === 'production',
+    minimize = mode === 'production',
     devServer = undefined,
     bundleFilename = undefined,
     sourceMapFilename = undefined,
@@ -48,9 +49,9 @@ export default (env) => {
    * to check its value to avoid accessing undefined value,
    * otherwise an error might occur.
    */
-  if (devServer) {
-    devServer.hmr = false;
-  }
+  // if (devServer) {
+  //   devServer.hmr = false;
+  // }
 
   /**
    * Depending on your Babel configuration you might want to keep it.
@@ -77,7 +78,7 @@ export default (env) => {
      */
     entry: [
       ...Repack.getInitializationEntries(reactNativePath, {
-        hmr: false // devServer && devServer.hmr,
+        hmr: devServer && devServer.hmr,
       }),
       entry,
     ],
@@ -119,7 +120,24 @@ export default (env) => {
      */
     optimization: {
       /** Enables minification based on values passed from React Native Community CLI or from fallback. */
-      minimize: false,
+      minimize,
+      /** Configure minimizer to process the bundle. */
+      minimizer: [
+        new TerserPlugin({
+          test: /\.(js)?bundle(\?.*)?$/i,
+          /**
+           * Prevents emitting text file with comments, licenses etc.
+           * If you want to gather in-file licenses, feel free to remove this line or configure it
+           * differently.
+           */
+          extractComments: false,
+          terserOptions: {
+            format: {
+              comments: false,
+            },
+          },
+        }),
+      ],
       chunkIds: 'named',
     },
     module: {
@@ -160,10 +178,10 @@ export default (env) => {
             loader: 'babel-loader',
             options: {
               /** Add React Refresh transform only when HMR is enabled. */
-              plugins: undefined /*
+              plugins:
                 devServer && devServer.hmr
                   ? ['module:react-refresh/babel']
-                  : undefined, */
+                  : undefined,
             },
           },
         },
@@ -205,7 +223,6 @@ export default (env) => {
           overrideTaming: 'severe',
         }
       }),
-
       /**
        * Configure other required and additional plugins to make the bundle
        * work in React Native and provide good development experience with
@@ -229,3 +246,4 @@ export default (env) => {
     ],
   };
 };
+/*  */
