@@ -1,8 +1,13 @@
 {
   "resources": {
+    "lavamoat-core": {
+      "globals": {
+        "Reflect": true
+      }
+    },
     "@callstack/repack": {
       "globals": {
-        "__webpack_public_path__": "write"
+        "__webpack_public_path__": true
       },
       "packages": {
         "@babel/runtime": true,
@@ -16,18 +21,20 @@
     },
     "react-native": {
       "globals": {
+        "Reflect": true,
+        "Object": true,
         "ArrayBufferView": true,
         "Blob": true,
-        "DOMRect": "write",
-        "DOMRectReadOnly": "write",
+        "DOMRect": true,
+        "DOMRectReadOnly": true,
         "DebuggerInternal": true,
         "ErrorUtils": true,
-        "Event": "write",
+        "Event": true,
         "Headers": true,
         "HermesInternal": true,
         "RN$Bridgeless": true,
         "RN$registerCallableModule": true,
-        "RN$stopSurface": "write",
+        "RN$stopSurface": true,
         "Request": true,
         "Response": true,
         "__DEV__": true,
@@ -35,14 +42,14 @@
         "__RCTProfileIsProfiling": true,
         "__REACT_DEVTOOLS_GLOBAL_HOOK__": true,
         "__blobCollectorProvider": true,
-        "__fbBatchedBridge": "write",
+        "__fbBatchedBridge": true,
         "__fbBatchedBridgeConfig": true,
         "__fbDisableExceptionsManager": true,
-        "__fbGenNativeModule": "write",
-        "__fetchSegment": "write",
+        "__fbGenNativeModule": true,
+        "__fetchSegment": true,
         "__nativeComponentRegistry__hasComponent": true,
         "__turboModuleProxy": true,
-        "alert": "write",
+        "alert": true,
         "cancelAnimationFrame": true,
         "clearImmediate": true,
         "clearTimeout": true,
@@ -66,17 +73,17 @@
         "nativeTraceEndAsyncSection": true,
         "nativeTraceEndSection": true,
         "nativeTraceIsTracing": true,
-        "navigator": "write",
-        "performance": "write",
+        "navigator": true,
+        "performance": true,
         "pokeSamplingProfiler": true,
-        "process": "write",
+        "process": true,
         "queueMicrotask": true,
         "regeneratorRuntime": true,
         "requestAnimationFrame": true,
-        "self": "write",
+        "self": true,
         "setImmediate": true,
         "setTimeout": true,
-        "window": "write"
+        "window": true
       },
       "packages": {
         "@babel/runtime": true,
@@ -101,10 +108,10 @@
     },
     "react-native>@react-native/js-polyfills": {
       "globals": {
-        "ErrorUtils": "write",
+        "ErrorUtils": true,
         "__DEV__": true,
         "__inspectorLog": true,
-        "console": "write",
+        "console": true,
         "nativeLoggingHook": true,
         "print": true
       }
@@ -163,7 +170,7 @@
     },
     "react-native>regenerator-runtime": {
       "globals": {
-        "regeneratorRuntime": "write"
+        "regeneratorRuntime": true
       }
     },
     "react-native>scheduler": {

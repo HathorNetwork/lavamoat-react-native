@@ -14,5 +14,3 @@ AppRegistry.registerComponent(appName, () => {
   console.log('AppRegistry.registerComponent called');
   return App;
 });
-
-console.log('End of index.js');

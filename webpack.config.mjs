@@ -1,7 +1,6 @@
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import * as Repack from '@callstack/repack';
-import TerserPlugin from 'terser-webpack-plugin';
 import LavaMoat from '@lavamoat/webpack';
 
 const dirname = Repack.getDirname(import.meta.url);
@@ -49,9 +48,9 @@ export default (env) => {
    * to check its value to avoid accessing undefined value,
    * otherwise an error might occur.
    */
-  // if (devServer) {
-  //   devServer.hmr = false;
-  // }
+  if (devServer) {
+    devServer.hmr = false;
+  }
 
   /**
    * Depending on your Babel configuration you might want to keep it.
@@ -78,7 +77,7 @@ export default (env) => {
      */
     entry: [
       ...Repack.getInitializationEntries(reactNativePath, {
-        hmr: devServer && devServer.hmr,
+        hmr: false // devServer && devServer.hmr,
       }),
       entry,
     ],
@@ -161,10 +160,10 @@ export default (env) => {
             loader: 'babel-loader',
             options: {
               /** Add React Refresh transform only when HMR is enabled. */
-              plugins:
+              plugins: undefined /*
                 devServer && devServer.hmr
                   ? ['module:react-refresh/babel']
-                  : undefined,
+                  : undefined, */
             },
           },
         },
@@ -197,6 +196,16 @@ export default (env) => {
       ],
     },
     plugins: [
+      new LavaMoat({
+        inlineLockdown: /index\.bundle/,
+        lockdown: {
+          consoleTaming: 'unsafe',
+          errorTrapping: 'none',
+          unhandledRejectionTrapping: 'none',
+          overrideTaming: 'severe',
+        }
+      }),
+
       /**
        * Configure other required and additional plugins to make the bundle
        * work in React Native and provide good development experience with
@@ -216,9 +225,6 @@ export default (env) => {
           sourceMapFilename,
           assetsPath,
         },
-      }),
-
-      new LavaMoat({
       }),
     ],
   };
